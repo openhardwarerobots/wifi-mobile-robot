@@ -11,8 +11,8 @@ install:
   - arduino --install-library "aREST"
   - arduino --install-library "Adafruit CC3000 Library"
 script:
-  - arduino --verify --board arduino:avr:yun $PWD/robot_test/robot_test.ino
-  - arduino --verify --board arduino:avr:yun $PWD/robot_wifi/robot_wifi.ino
+  - arduino --verify --board arduino:avr:uno $PWD/robot_test/robot_test.ino
+  - arduino --verify --board arduino:avr:uno $PWD/robot_wifi/robot_wifi.ino
 notifications:
   email:
     on_success: change
